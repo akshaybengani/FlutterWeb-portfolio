@@ -5,6 +5,7 @@ import 'package:webbasics/screens/storynavbar.dart';
 import 'package:webbasics/screens/storystart.dart';
 import 'package:webbasics/screens/storysuspense.dart';
 import 'package:webbasics/screens/storytwist.dart';
+import 'package:webbasics/widgets/showMobileProjectDetails.dart';
 
 void main() => runApp(MyApp());
 
@@ -15,11 +16,18 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: MyHomePage(),
+      routes: {
+        ShowMobileProjectDetails.routename: (ctx) => ShowMobileProjectDetails(),
+        MyHomePage.routename: (ctx) => MyHomePage(),
+      },
+      initialRoute: '/home',
+
     );
   }
 }
 
 class MyHomePage extends StatelessWidget {
+  static const routename = "/home";
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -59,7 +59,7 @@ class StoryTwist extends StatelessWidget {
           SizedBox(height: 20),
           ProjectHeadingWidget(
             headTitle: "Flutter",
-            headImage: "assets/images/flutter.jpg",
+            headImage: "assets/images/flutterhead.jpg",
             headingColor: Colors.cyan,
           ),
           MobileProjectGrid(MOBILE_FLUTTER_PROJECTS),
@@ -68,7 +68,7 @@ class StoryTwist extends StatelessWidget {
           SizedBox(height: 20),
           ProjectHeadingWidget(
             headTitle: "Android Native",
-            headImage: "assets/images/android.jpg",
+            headImage: "assets/images/androidhead.jpg",
             headingColor: Colors.green,
           ),
           MobileProjectGrid(MOBILE_NATIVE_PROJECTS),

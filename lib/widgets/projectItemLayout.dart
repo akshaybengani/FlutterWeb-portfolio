@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:webbasics/models/mobileproject.dart';
+import 'package:webbasics/widgets/mobileDetailsAlertBox.dart';
 import 'package:webbasics/widgets/showMobileProjectDetails.dart';
 
 class ProjectItemLayout extends StatelessWidget {
@@ -16,7 +17,8 @@ class ProjectItemLayout extends StatelessWidget {
       //height: 300,
       child: GestureDetector(
         onTap: () {
-          ShowMobileProjectDetails();
+          //Navigator.of(context).pushNamed(ShowMobileProjectDetails.routename, arguments: mobileProject);
+          MobileDetailsAlertBox().showDetailsDialog(context: context, mobpro: mobileProject, screenSize: screenSize);
         },
         child: Card(
           elevation: 3,
