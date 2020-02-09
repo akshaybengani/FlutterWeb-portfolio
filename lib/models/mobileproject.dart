@@ -23,3 +23,4 @@ class MobileProject {
     this.pPubUrl,
   });
 }
+

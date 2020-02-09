@@ -16,7 +16,9 @@ class MobileProjectGrid extends StatelessWidget {
       //decoration:
       //    BoxDecoration(border: Border.all(color: Colors.black, width: 2)),
       width:  screenSize.width * 0.9,
-      height: mobileSize ? screenSize.width * 0.6 : screenSize.width * 0.25,
+      //height: mobileSize ? screenSize.width * 0.6 : screenSize.width * 0.25,
+      //width: 300,
+      height: 300,
       margin: EdgeInsets.symmetric(vertical: 20),
       child: GridView(
         scrollDirection: Axis.horizontal,
@@ -39,8 +41,8 @@ class MobileProjectGrid extends StatelessWidget {
             )
             .toList(),
         gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
-          maxCrossAxisExtent: 1000,
-          childAspectRatio: 5 / 4,
+          maxCrossAxisExtent: 500,
+          childAspectRatio: 7 / 5,
           crossAxisSpacing: 10,
           mainAxisSpacing: 20,
         ),
