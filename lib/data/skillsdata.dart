@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:webbasics/models/skill.dart';
 
-const TECH_DATA = const [
+const SKILLS_TECH_DATA = const [
   Skill(
     id: 's1',
     name: 'Flutter',
@@ -50,7 +50,7 @@ const TECH_DATA = const [
   ),
   Skill(
     id: 's7',
-    name: 'CryptoMining',
+    name: 'Crypto Mining',
     desc: 'Ethereum, Monero & Storj Mining on Cloud, OnDevice, Linux & Windows',
     imgUrl: 'assets/images/skills/cryptmining.jpg',
     skillcolor: Colors.amber,
@@ -64,7 +64,7 @@ const TECH_DATA = const [
   ),
 ];
 
-const DATABASE_DATA = const [
+const SKILLS_DATABASE_DATA = const [
 
   Skill(
     id: 's21',
@@ -80,9 +80,24 @@ const DATABASE_DATA = const [
     imgUrl: 'assets/images/skills/json.jpg',
     skillcolor: Colors.yellow,
   ),
+  Skill(
+    id: 's12',
+    name: 'Google Cloud Platform',
+    desc:
+        'Compute Engine, App Engine, Cloud Storage, API setup and security profiles, Billing Expertiese',
+    imgUrl: 'assets/images/skills/gcp.jpg',
+    skillcolor: Colors.green,
+  ),
+  Skill(
+    id: 's13',
+    name: 'Amazon AWS',
+    desc: 'VPC, Compute Instances, RDS, DynamoDB, Billing & Cloud Support',
+    imgUrl: 'assets/images/skills/aws.jpg',
+    skillcolor: Colors.orange,
+  ),
 ];
 
-const DEVOPS_DATA = const [
+const SKILLS_DEVOPS_DATA = const [
   Skill(
     id: 's9',
     name: 'Github & VCS',
@@ -109,7 +124,7 @@ const DEVOPS_DATA = const [
   ),
 ];
 
-const CLOUD_DATA = const [
+const SKILLS_CLOUD_DATA = const [
   Skill(
     id: 's12',
     name: 'Google Cloud Platform',
@@ -127,7 +142,7 @@ const CLOUD_DATA = const [
   ),
 ];
 
-const OTHERSKILL_DATA = const [
+const SKILLS_OTHERSKILL_DATA = const [
   Skill(
     id: 's14',
     name: 'Home Networking',
@@ -162,7 +177,7 @@ const OTHERSKILL_DATA = const [
   ),
 ];
 
-const LANGUAGE_DATA = const [
+const SKILLS_LANGUAGE_DATA = const [
   Skill(
     id: 's17',
     name: 'Dart',

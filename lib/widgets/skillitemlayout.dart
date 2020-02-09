@@ -27,20 +27,32 @@ class SkillItemLayout extends StatelessWidget {
                     vertical: BorderSide(color: skills.skillcolor, width: 5),
                   ),
                 ),
-                child: Container(
-                  margin: EdgeInsets.only(top: 50),
-                  padding: EdgeInsets.all(20),
-                  child: Text(
-                    skills.desc,
-                    textAlign: TextAlign.center,
-                  ),
+                child: Column(
+                  children: <Widget>[
+                    Container(
+                      width: 110,
+                      margin: EdgeInsets.only(left: 30, top: 20),
+                      child: Text(
+                        skills.name,
+                        textAlign: TextAlign.center,
+                        style: TextStyle(color: Colors.black, fontSize: 20),
+                      ),
+                    ),
+                    Container(
+                      padding: EdgeInsets.all(10),
+                      child: Text(
+                        skills.desc,
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                  ],
                 ),
               ),
             ),
           ),
           Positioned(
-            right: 120,
-            bottom: 150,
+            right: 160,
+            bottom: 200,
             child: Container(
               decoration: BoxDecoration(
                 image: DecorationImage(

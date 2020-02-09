@@ -42,6 +42,8 @@ class MyHomePage extends StatelessWidget {
               Divider(thickness: 5, color: Colors.lightGreenAccent),
               SizedBox(height: 20),
               StoryCenter(),
+              Divider(thickness: 5, color: Colors.orange),
+              SizedBox(height: 20),
               StoryTwist(),
               StorySuspense(),
               StoryEnding(),
